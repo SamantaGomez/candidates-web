@@ -1,0 +1,22 @@
+
+.candidate-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+/* Pantallas medianas */
+@media (max-width: 900px) {
+  .candidate-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Dispositivos móviles */
+@media (max-width: 600px) {
+  .candidate-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
