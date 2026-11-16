@@ -1,16 +1,16 @@
-//rafc + TAB o ENTER
+
 import { Header } from "./components/Header";
-import { VacanciesPage } from "./pages/VacanciesPage";
+import { CandidatesPage } from "./pages/CandidatesPage";
 
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <main className="container">
-        <VacanciesPage/>
+        <CandidatesPage />
       </main>
     </div>
-  )
-}
+  );
+};
 
 export default App;
