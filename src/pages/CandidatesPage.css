@@ -1,0 +1,70 @@
+
+.candidates-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.candidates-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.candidates-page-header h2 {
+  font-size: 28px;
+  color: #1e293b;
+  margin: 0;
+}
+
+.candidates-page-count {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.candidates-search {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.candidates-search:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.candidates-favorites-count {
+  margin-top: 20px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.candidates-page-empty {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+@media (max-width: 375px) {
+  .candidates-page {
+    padding: 20px 12px;
+  }
+
+  .candidates-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .candidates-page-header h2 {
+    font-size: 24px;
+  }
+}
