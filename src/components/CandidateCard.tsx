@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import type { Candidate } from "../types/candidate";
 import "./CandidateCard.css";
 
@@ -22,7 +23,14 @@ export const CandidateCard = ({
   return (
     <article className="candidate-card">
       <div className="candidate-card-header">
-        <h3>{candidate.name}</h3>
+        <h3>
+          <Link
+            to={`/candidates/${candidate.id}`}
+            className="candidate-name-link"
+          >
+            {candidate.name}
+          </Link>
+        </h3>
 
         <button
           type="button"
