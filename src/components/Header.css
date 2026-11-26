@@ -8,15 +8,36 @@
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  gap: 16px;
 }
 
 .header-brand {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-primary);
+  text-decoration: none;
 }
 
-.header-tagline {
-  font-size: 0.875rem;
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-link {
   color: var(--color-muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-bottom: 2px solid transparent;
+}
+
+.header-link:hover {
+  color: var(--color-primary);
+}
+
+.header-link-active {
+  color: var(--color-primary);
+  font-weight: 600;
+  border-bottom-color: var(--color-primary);
 }
