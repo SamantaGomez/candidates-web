@@ -1,13 +1,36 @@
-
+import { Navigate, Route, Routes } from "react-router";
 import { Header } from "./components/Header";
 import { CandidatesPage } from "./pages/CandidatesPage";
+import { CandidateDetailPage } from "./pages/CandidateDetailPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 const App = () => {
   return (
     <div>
       <Header />
+
       <main className="container">
-        <CandidatesPage />
+        <Routes>
+          <Route
+            path="/"
+            element={<Navigate to="/candidates" replace />}
+          />
+
+          <Route
+            path="/candidates"
+            element={<CandidatesPage />}
+          />
+
+          <Route
+            path="/candidates/:id"
+            element={<CandidateDetailPage />}
+          />
+
+          <Route
+            path="*"
+            element={<NotFoundPage />}
+          />
+        </Routes>
       </main>
     </div>
   );

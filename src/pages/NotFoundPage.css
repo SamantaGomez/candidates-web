@@ -1,0 +1,32 @@
+.not-found-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.not-found-page h2 {
+  font-size: 64px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.not-found-page h3 {
+  font-size: 24px;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.not-found-page p {
+  color: var(--color-muted);
+  margin-bottom: 24px;
+}
+
+.not-found-link {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.not-found-link:hover {
+  text-decoration: underline;
+}
