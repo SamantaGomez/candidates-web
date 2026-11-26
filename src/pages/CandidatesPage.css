@@ -68,3 +68,22 @@
     font-size: 24px;
   }
 }
+
+.candidates-page-loading {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+.candidates-page-error {
+  text-align: center;
+  margin-top: 40px;
+  padding: 16px;
+  color: var(--color-danger);
+  background: var(--color-surface);
+  border: 1px solid var(--color-danger);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
